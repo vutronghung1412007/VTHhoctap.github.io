@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            width: 500px;
+        }
+        h1 {
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .subject {
+            margin-top: 20px;
+        }
+        .subject a {
+            color: #ff9800;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .subject a:hover {
+            text-decoration: underline;
+        }
+        .subject img {
+            width: 100px;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background: #ff9800;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #e68900;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Chào mừng bạn đến với Khóa học Online Miễn Phí</h1>
+        <p>Bạn đã đăng nhập thành công! Hãy chọn khóa học bạn muốn bắt đầu.</p>
+
+        <div class="subject">
+            <h2><a href="physics.html">Vật Lý</a></h2>
+            <img src="images.jpg" alt="Hình ảnh môn Vật Lý">
+        </div>
+
+        <button onclick="logout()">Đăng xuất</button>
+    </div>
+
+    <script>
+        function logout() {
+            alert('Bạn đã đăng xuất!');
+            window.location.replace('index.html'); // Quay lại trang đăng nhập
+        }
+    </script>
+</body>
+</html>
